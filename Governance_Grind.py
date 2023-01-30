@@ -17,43 +17,56 @@ with c1:
     st.text(" \n")
     st.text(" \n")
 
-    st.write("""# 🌔Terra (blockchain) #""")
+    st.write("""# 🌔Terra (Governance) #""")
 
 st.write("""
-Terra is a blockchain protocol and payment platform used for algorithmic stablecoins. The project was created in 2018 by Terraform Labs, a startup co-founded by Do Kwon and Daniel Shin. It is most known for its Terra stablecoin and the associated Luna reserve asset cryptocurrency.  
-In May 2022, the Terra blockchain was temporarily halted after the collapse of the stablecoin TerraUSD (UST) and Luna, in an event that wiped out almost USD45 billion in capitalization within a week. 
-### Design ###
-Terra is a blockchain that leverages fiat-pegged stablecoins to power a payment system. For consensus the Terra blockchain uses a proof-of-stake codesign. Several stablecoins are built atop the Terra protocol, including TerraUSD, which was the third-largest stablecoin by capitalization before its collapse in May 2022. The Terra blockchain has a fully functional ecosystem of Dapps such as Anchor, Mirror, and Pylon which has utilized the stable-coin infrastructure of Terra. 
-Terra is a group of algorithmic stablecoins, named according to the currencies to which they are pegged—for example, TerraUSD (UST) is pegged to the U.S. dollar.  
-Luna serves as the primary backing asset for Terra, and is also used as a governance token for users to vote on Terra community proposals.  
-UST stablecoins were not backed by U.S. dollars; instead, it was designed to maintain its peg through a complex model called a "burn and mint equilibrium". This method uses a two-token system, whereby one token is supposed to remain stable (UST) while the other token (LUNA) is meant to absorb volatility. 
-### History ###
-In 2018, Do Kwon and Daniel Shin (also known as Shin Hyun-sung) co-founded Terraform Labs in Seoul, South Korea. In 2019, Terraform Labs launched its first cryptocurrency token. Terraform Labs raised more than USD200 million from investment firms such as Arrington Capital, Coinbase Ventures, Galaxy Digital and Lightspeed Venture Partners.  
-In January 2022, the Luna Foundation Guard (LFG) was established as a non-profit based in Singapore, with Do Kwon serving as its director. Terraform Labs allocated a portion of the money obtained from UST sales to Luna Foundation Guard, to be used as reserves to stabilize the price of UST. As of 7 May, just before UST broke its peg, LFG held reserves of 80,394 bitcoin worth approximately USD2.4 billion. Bitcoin was the largest portion of the reserve assets, though LFG also held reserves in various other stablecoins and cryptocurrencies. 
-In February 2022, Terra and the Washington Nationals Major League Baseball team announced they had entered into a sponsorship agreement which provided stadium and television branding, as well as the rebranding of the Washington Nationals club and lounge to the "Terra Club".  
-The deal was originally proposed to the Terra community by Kwon, referring only to an unnamed "sports franchise in one of the four major American professional sports leagues", and the community agreed to pay USD38.15 million for a five-year-long exclusive partnership. 
-### Collapse ###
-Beginning on 9 May 2022, the tokens made headlines after UST began to break its peg to the US dollar. Over the next week, the price of UST plunged to 10 cents, while Luna fell to "virtually zero", down from an all-time high of USD119.51. Before the crash, Luna was one of the top ten largest cryptocurrencies on the market. The collapse wiped out almost USD45 billion of market capitalization over the course of a week. 
-On 13 May, Terraform Labs temporarily halted the Terra blockchain in response to the falling prices of UST and Luna.  
-Despite the company's attempts to stabilize UST and Luna via its bitcoin and other cryptocurrency reserves from the Luna Foundation Guard, the 1:1 peg of UST to USD did not materialize. As of 16 May 2022, blockchain analysts claim that the usage of the bitcoin reserves of LFG still remains largely uncertain. 
-On 25 May, a proposal was approved to reissue a new Luna cryptocurrency and to decouple from and abandon the devalued UST stablecoin. The original blockchain is now called Terra Classic (LUNC), and the original Luna token is called Luna Classic. The new Luna coin is called "Terra 2.0" by investors, and has lost valuation in the opening days of being listed on exchanges. 
+Terra is a blockchain protocol and payment platform used for algorithmic stablecoins. The project was created in 2018 by Terraform Labs, a startup co-founded by Do Kwon and Daniel Shin. It is most known for its Terra stablecoin and the associated Luna reserve asset cryptocurrency.  In May 2022, the Terra blockchain was temporarily halted after the collapse of the stablecoin TerraUSD (UST) and Luna, in an event that wiped out almost USD45 billion in capitalization within a week. 
+### Goveranance In Terra ###
+Here, ‘governance’ refers to decision making and control, with a focus on who has these capabilities.
+A compulsory requirement for a Blockchain project’s success is that it maintains decentralisation. The project must also create governance that can deal with the complexity in decision making in order to reduce uncertainty, delays and costs when used by stakeholders over existing systems.
+Governance becomes more complicated when you have many stakeholders within a particular blockchain network. Public Blockchain networks, therefore, have much higher governance risk than private Blockchain networks. Anyone who joins a public blockchain may in some way affect and vote in the system.
+The Terra protocol is a decentralized public blockchain governed by community members. Governance is the democratic process that allows users and validators to make changes to the Terra protocol. Community members submit, vote, and implement proposals.The governance module maintains the logic for all governance activity.
+To learn how to vote with staked Luna or submit proposals, visit the [Station governance guide](https://docs.terra.money/learn/station/governance/).
 
- 
+### Drafting and submission ###
+Proposals start as ideas within the community on Terra's Agora forum. After gaining support and feedback from the community, a proposer drafts and submits a proposal alongside an initial deposit.
+### Deposit period ###
+After a proposal is submitted, it enters the deposit period, where it must reach a total minimum deposit of 512 Luna within 7 days from the time of its submission. The deposit threshold is reached when the sum of the initial deposit (from the proposer) and the deposits from all other interested network participants meet or exceed 512 Luna.Deposits protect against unnecessary proposals and spam.  
+Deposits get refunded if all of the following conditions are met:
+The minimum deposit of 512 Luna is reached within the 7-day deposit period,
+Quorum is met: all casted votes represent more than 30% of all staked Luna, 
+The total number of NoWithVeto votes is less than 33.4% of the total vote. A vote returns a majority of Yes or No votes.
+### Votin Period & Options ###
+If the minimum deposit has been reached before the end of the deposit period, then the proposal goes into a one-week voting period. While the proposal is in voting, holders of staked Luna can cast votes for the proposal.  
+The 4 voting options available are:
+
+* Yes: in favor.
+* No: not in favor.
+* NoWithVeto: not in favor, and the creator should lose their deposit.
+* Abstain: neither for or against. An abstain vote counts toward meeting quorum but does not count toward the threshold.
+
+Delegators vote using their staked Luna. One staked Luna equals one vote.If a delegator does not specify a vote with their staked Luna, their vote defaults to the vote cast by the validator their Luna is staked to. Delegators can override a validator's vote at any time during the voting period by voting with their staked Luna.
 
 
+## Methodology ###
+ As Terra 2.0 has expanded, we’ve seen a number of governance proposals come to light. Analyze the voting activity on the most recent 5 proposals. Can you identify any trends or patterns in voting?
+Bonus: Dig up and compare the text of 2 governance proposals. What do you think of these proposals? What would have made them stronger or likelier to gather more votes? Do you have any improvements to recommend?  
+To answer these questions 2 tables from Flipside Crypto Data Base were used:
+ * terra.core.fact_governance_votes   
+ * terra.core.fact_msg_attributes  
+ finally two proposal text reviewed and commented, one recently passed propsal ["Control Protocol Grant Proposal"]() with ID3665
 
-
-
- 
  """
          )
 
 
 st.write("""   
 ##### Sources #####   """)
-st.write("""    1.https: // www.scoutinsights.co. in /post/luna-and -lunc-coins-destroyed  
-        2.https: // www.bloomberg.com/news/articles/2022-05-14  
-        3.https: // social.techcrunch.com/2022/05/12/  
+st.write("""    1.https://docs.terra.money/develop/module-specifications/spec-governance/  
+        2.https://www.bloomberg.com/news/articles/2022-05-14    
+        3.https://docs.terra.money/learn/station/governance/  
+        4.https://docs.terra.money/develop/module-specifications/spec-governance/  
+
               """)
 
 
@@ -62,7 +75,7 @@ with c2:
     st.info(
         '**Project Supervisor:  [MetricsDao](https://metricsdao.notion.site/)**', icon="👨🏻‍💼")
     st.info(
-        '**Project GuitHub:  [GuitHub](https://github.com/Kaizen-Step/Terra_Price_Run_Investigation)**', icon="💻")
+        '**Project GuitHub:  [Governance Grind](https://github.com/Kaizen-Step/Governance_Grind)**', icon="💻")
 with c1:
     st.info(
         '**Data:  [Flipside Crypto](https://flipsidecrypto.xyz/)**', icon="🧠")

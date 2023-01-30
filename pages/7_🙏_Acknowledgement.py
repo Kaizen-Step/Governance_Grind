@@ -37,12 +37,15 @@ st.write(""" At the following links, you can find the SQL codes that are used in
 
 # SQL Codes
 st.write("""
-1. https://app.flipsidecrypto.com/velocity/queries/830bbb73-4837-4302-bb3a-69a3ec13c1f5
-2. https://app.flipsidecrypto.com/velocity/queries/6b354e38-ee84-4c7a-a57c-5cc320688ee1
-3. https://app.flipsidecrypto.com/velocity/queries/5639fadf-49df-4a66-83b9-e94e3fec6c56
-4. https://app.flipsidecrypto.com/velocity/queries/b9360da6-852c-4caf-885e-f3c1639b18ed
-5. https://app.flipsidecrypto.com/velocity/queries/6cc96469-ed94-4d32-86de-b73d49565c5e
-6. https://app.flipsidecrypto.com/velocity/queries/c3fb1a80-6d3f-4f25-ac4e-912cd1557db2
+1. https://app.flipsidecrypto.com/velocity/queries/8def6bbf-8602-4dda-99fe-7c66678ceb4a
+2. https://app.flipsidecrypto.com/velocity/queries/ea71c087-7514-4698-a196-59e11f900cff
+3. https://app.flipsidecrypto.com/velocity/queries/ff770fc6-9628-4231-b74f-e7a654ec2299
+4. https://app.flipsidecrypto.com/velocity/queries/559442dc-7200-4d05-9b12-7e627a1a85d1
+5. https://app.flipsidecrypto.com/velocity/queries/34c974c7-fb3f-4822-9490-fb9294a01adf
+6. https://app.flipsidecrypto.com/velocity/queries/890424b0-58ad-4d56-a0ce-0fe6d27b81d9 
+7. https://app.flipsidecrypto.com/velocity/queries/8043d5bb-7e14-4d76-bc4e-75abd59f6348  
+8. https://app.flipsidecrypto.com/velocity/queries/3a2c0957-cf4a-4e85-9f19-30004b35be87  
+9. https://app.flipsidecrypto.com/velocity/queries/77e334cd-6189-41bc-be48-e45f0683b492
 
 
 """)
